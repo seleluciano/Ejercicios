@@ -28,7 +28,8 @@ def division(x,y):
 
 
 print("*****Elija la opcion*****")
-n=int(input("1 Ingresar valores \n 2 Sumar  \n 3 Restar  \n 4 Multiplicar \n 5 Division \n 6 Salir \n"))
+print("1 Ingresar valores \n 2 Sumar  \n 3 Restar  \n 4 Multiplicar \n 5 Division \n 6 Salir \n")
+n=int(input("Elija una opcion"))
 while n!=6:
     if n==1:
         X= float(input("Ingrese un valor "))
@@ -42,5 +43,6 @@ while n!=6:
     elif n==5:
         division(X,Y)
     print("*****Elija la opcion*****")
-    n=int(input("1 Ingresar valores \n 2 Sumar  \n 3 Restar  \n 4 Multiplicar \n 5 Division \n 6 Salir \n"))
+    print("1 Ingresar valores \n 2 Sumar  \n 3 Restar  \n 4 Multiplicar \n 5 Division \n 6 Salir \n")
+    n=int(input("Elija una opcion"))
 print("*****FIN, GRACIAS*****")
