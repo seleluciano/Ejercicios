@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=PT+Mono&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #a0a2c7;
+  width: 100%;
+  height: 80%; }
+
+h1 {
+  color: black;
+  font-family: "Shadows Into Light", cursive;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline; }
+
+h2 {
+  color: black;
+  font-family: "PT Mono", monospace;
+  font-style: oblique;
+  text-align: center; }
+
+h3 {
+  color: white;
+  text-align: left; }
+
+p {
+  font-family: "PT Mono", monospace;
+  color: black;
+  text-align: justify; }
+
+a {
+  font-family: "PT Mono", monospace;
+  color: white;
+  font-style: oblique;
+  text-align: justify;
+  text-decoration: none; }
+
+
+@media only screen and (min-width: 320px) {
+  body main .productos .grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 20%); } }
+
+@media only screen and (min-width: 480px) {
+  body main .productos .grid {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 33%); } }
+
+@media only screen and (min-width: 768px) {
+  body main .productos .grid {
+    grid-template-columns: repeat(3, 34%);
+    grid-template-rows: repeat(2, 50%); } }
+
+footer {
+  background-image: linear-gradient(to right, #8312eb, #8b26eb, #9234ec, #9941ec, #a04cec);
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+  
+header {
+  background-image: linear-gradient(to right, #8312eb, #8b26eb, #9234ec, #9941ec, #a04cec);
+  width: 100%;
+  height: 20%;
+  position: sticky;
+  top: 0; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center; }
+    header nav .nav-link {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: white; }
+
+      .productos {
+        background-position: left; }
+        .productos a {
+          text-decoration: none;
+          color: black;
+          background-color: blanchedalmond;
+          padding: 2px;
+          margin: 4px; }
+        .productos .grid {
+          text-decoration: none;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 33.3% 33.3% 33.3%;
+          grid-template-rows: 50% 50%; }
+          .productos .grid .grid-item {
+            background-color: #594f66;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            .productos .grid .grid-item div {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center; }
+              .productos .grid .grid-item div a {
+                transition-duration: 2s;
+                transition-timing-function: ease; }
+                .productos .grid .grid-item div a:hover {
+                  transform: scale(1.2, 1.2); }
+            .productos .grid .grid-item img {
+              width: 80%;
+              height: 80%;
+              transition-duration: 3s;
+              transition-timing-function: ease-out; }
+              .productos .grid .grid-item img:hover {
+                width: 85%;
+                transform: widht 3s; }
+      
