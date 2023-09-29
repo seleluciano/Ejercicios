@@ -46,7 +46,7 @@ export default {
           this.resultado = n1 / n2;
         }
       } else {
-        this.resultado = "Por favor ingrese números válidos.";
+        alert('Por favor ingrese números válidos')
       }
     }
   }
